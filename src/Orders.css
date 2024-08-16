@@ -1,0 +1,125 @@
+.order-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.sidebar {
+  width: 15%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed; /* Fix the sidebar */
+  height: 100%; /* Make the sidebar take full height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar-item.active, .sidebar-item:hover {
+  background-color: #e0e0e0;
+}
+
+.main-content {
+  width: 85%;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 15%; /* Adjust margin to accommodate the fixed sidebar */
+  overflow-y: auto; /* Enable vertical scrolling for the main content */
+}
+
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.status-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.status-filters button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.status-filters button:hover {
+  background-color: #e0e0e0;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th, .order-table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #f9f9f9;
+}
+
+.order-table td.status {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.status.in-progress {
+  background-color: #ffeb3b;
+}
+
+.status.open {
+  background-color: #8bc34a;
+}
+
+.status.ready {
+  background-color: #03a9f4;
+}
+
+.status.served {
+  background-color: #4caf50;
+}
+
+.status.cancelled {
+  background-color: #f44336;
+}
+
+.details-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #1976d2;
+}

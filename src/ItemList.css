@@ -1,0 +1,233 @@
+.item-list-container {
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 100px); /* Adjust as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  color: #000000; /* Black text */
+}
+
+.item-list-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000; /* Black text */
+}
+
+.item-list-container .back-button {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-list-container .back-button:hover {
+  background-color: #333333; /* Darker black on hover */
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-item-form input {
+  padding: 10px;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000000; /* Black text */
+  background-color: #ffffff; /* White background */
+}
+
+.new-item-form input[type="file"] {
+  padding: 5px;
+}
+
+.new-item-form button {
+  padding: 10px 20px;
+  background-color: #000000; /* Black button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-item-form button:hover {
+  background-color: #333333; /* Darker black on hover */
+}
+
+.variations {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 10px;
+}
+
+.variation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 20px;
+}
+
+.item {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #000000; /* Black border */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: auto; /* Auto height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-details h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000; /* Black text */
+}
+
+.item-details p {
+  margin: 5px 0;
+  color: #000000; /* Black text */
+}
+
+.item-variations {
+  margin-top: 10px;
+  border-top: 1px solid #000000; /* Black border */
+  padding-top: 10px;
+}
+
+.item-variations h4 {
+  margin-bottom: 10px;
+  color: #000000; /* Black text */
+}
+
+.variation {
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #000000; /* Black border */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.toggle-description {
+  color: #007bff; /* Link color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.item-actions button {
+  padding: 5px 10px;
+  background-color: #000000; /* Black button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-actions button:hover {
+  background-color: #333333; /* Darker black on hover */
+}
+
+.delete-confirmation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.delete-confirmation p {
+  font-size: 16px;
+  color: #000000; /* Black text */
+}
+
+.delete-confirmation button {
+  padding: 10px 20px;
+  background-color: #000000; /* Black button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-confirmation button:hover {
+  background-color: #333333; /* Darker black on hover */
+}
+
+.delete-confirmation button:nth-child(2) {
+  background-color: #000000; /* Black button */
+}
+
+.delete-confirmation button:nth-child(2):hover {
+  background-color: #333333; /* Darker black on hover */
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0.8;
+  z-index: 1000;
+}
